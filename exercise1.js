@@ -18,6 +18,18 @@ class Vehicle {
     this.#year = year
   }
 
+  get make(){
+    return this.#make
+  }
+
+  get model(){
+    return this.#model
+  }
+
+  get year(){
+    return this.#year
+  }
+
   getInfo(){
     return `${this.#year} ${this.#make} ${this.#model}`
   }
@@ -32,7 +44,7 @@ class Car extends Vehicle {
   }
 
   getInfo(){
-    return `${super.getInfo()} with ${this.#doors} doors `
+    return `${super.getInfo()} with ${this.#doors} doors`
   }
 }
 

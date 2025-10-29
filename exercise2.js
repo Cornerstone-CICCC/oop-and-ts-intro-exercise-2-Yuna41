@@ -10,33 +10,33 @@ class Animal {
   #type;
 
   constructor(type) {
-      this.#type = type;
+    this.#type = type;
   }
 
   getType() {
-      return this.#type;
+    return this.#type;
   }
 
   speak() {
-      return `The ${this.getType()} makes a sound`;
+    return `The ${this.getType()} makes a sound`;
   }
 }
 
 class Dog extends Animal {
-  constructor(type){
-    super(type)
+  constructor(){
+    super("dog")
   }
   speak(){
-    return `The dog barks`
+    return `The ${this.getType()} barks`
   }
 }
 
 class Cat extends Animal {
-  constructor(type){
-    super(type)
+  constructor(){
+    super("cat")
   }
   speak(){
-    return `The cat meows`
+    return `The ${this.getType()} meows`
   }
 }
 

@@ -16,6 +16,14 @@ class Employee {
     this.#position = position
   }
 
+  get name(){
+    return this.#name
+  }
+
+  get position(){
+    return this.#position
+  }
+
   introduce(){
     return `Hi, I'm ${this.#name}, a ${this.#position}.`
   }
